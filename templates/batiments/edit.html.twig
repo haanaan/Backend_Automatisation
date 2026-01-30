@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Batiments{% endblock %}
+
+{% block body %}
+    <h1>Edit Batiments</h1>
+
+    {{ include('batiments/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_batiments_index') }}">back to list</a>
+
+    {{ include('batiments/_delete_form.html.twig') }}
+{% endblock %}
