@@ -18,8 +18,8 @@ jobs:
       - name: Install Composer dependencies
         run: composer install --prefer-dist --no-progress --no-suggest
       - name: Run PHPStan
-        run: vendor/bin/phpstan analyse src || true
+        run: vendor/bin/phpstan analyse src 
       - name: Run PHPCS
-        run: vendor/bin/phpcs src || true
+        run: vendor/bin/phpcs src 
       - name: Run PHPUnit
-        run: php bin/phpunit || true
+        run: php bin/phpunit 
